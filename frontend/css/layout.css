@@ -289,8 +289,8 @@ ul#nav li.current a { color: #F06000; }
 
 #projects {
    background: #ffffff;
-   padding-top: 90px;
-   padding-bottom: 72px;
+   padding-top: 70px;
+   padding-bottom: 50px;
    overflow: hidden;
 }
 
@@ -309,20 +309,13 @@ ul#nav li.current a { color: #F06000; }
 #projects h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
 }
-
-#projects .header-col { padding-top: 9px; }
 #projects .main-col { padding-right: 10%; }
 
-.education, .work {
-   margin-bottom: 48px;
-   padding-bottom: 24px;
-   border-bottom: 1px solid #E8E8E8;
-}
 #projects .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
-   margin-bottom: 18px;
-   margin-top: 9px;
+   margin-bottom: 13px;
+   margin-top: 7px;
 }
 #projects .info span {
    margin-right: 5px;
@@ -332,7 +325,6 @@ ul#nav li.current a { color: #F06000; }
    font: 15px/24px 'opensans-light', sans-serif;
    margin-top: 6px;
 }
-
 
 /*----------------------------------------------*/
 /*	Skill Bars
