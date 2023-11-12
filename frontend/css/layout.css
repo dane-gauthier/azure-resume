@@ -54,10 +54,11 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 55%;
-   padding-bottom: 5px;
+   padding-bottom: 0px;
    text-align: center;
 }
 
+/* Text typewriter */
 .wrapper {
    height: 30vh;
    /*This part is important for centering*/
@@ -66,12 +67,12 @@ header .banner {
  }
  
  .typing-demo {
-   width: 14ch;
-   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+   width: 12ch;
+   animation: typing 2s steps(20), blink .5s step-end infinite alternate;
    white-space: nowrap;
-   color: #ffffff;
+   color: #ffffff;   
    overflow: hidden;
-   border-right: 3px solid;
+   border-right: 1px solid;
    font-family: monospace;
    font-size: 3em;
  }
@@ -138,10 +139,10 @@ header .scrolldown a:hover { color: #11ABB0; }
 #nav-wrap {
    font: 12px 'opensans-bold', sans-serif;
    width: 100%;
-   text-transform: uppercase;
+   text-transform: lowercase;
    letter-spacing: 2.5px;
    margin: 0 auto;
-   z-index: 100;
+   z-index: 200;
    position: fixed;
    left: 0;
    top: 0;
