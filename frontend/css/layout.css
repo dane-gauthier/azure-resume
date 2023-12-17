@@ -30,17 +30,17 @@ body { background: #A9A9A9; }
 
 header {
    position: relative;
-   height: 800px;
-   min-height: 500px;
+   height: 200px;
+   min-height: px;
    width: 100%;
    background: #dfdbdd69 no-repeat top center;
    background-size: cover !important;
-	-webkit-background-size: cover !important;
+   -webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
 }
 
-/* vertically center banner section */
+/* Vertically center banner section */
 header:before {
    content: '';
    display: inline-block;
@@ -53,57 +53,33 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 55%;
-   padding-bottom: 0px;
+   padding-bottom: 10;
    text-align: center;
 }
 
-/* Text typewriter */
-.wrapper {
-   height: 30vh;
-   /*This part is important for centering*/
-   display: grid;
-   place-items: center;
- }
- 
- .typing-demo {
-   width: 12ch;
-   animation: typing 2s steps(20), blink .5s step-end infinite alternate;
-   white-space: nowrap;
-   color: #ffffff;   
-   overflow: hidden;
-   border-right: 1px solid;
-   font-family: monospace;
-   font-size: 3em;
- }
- 
- @keyframes typing {
-   from {
-     width: 0
-   }
- }
-     
- @keyframes blink {
-   20% {
-     border-color: transparent
-   }
- }
-
-/* header social links */
+/* Header social links */
 header .social {
    margin: 24px 0;
    padding: 0;
    font-size: 30px;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
 }
+
 header .social li {
    display: inline-block;
    margin: 0 15px;
    padding: 0;
 }
-header .social li a { color: #fff; }
-header .social li a:hover { color: #11ABB0; }
 
-/* scrolldown link */
+header .social li a {
+   color: #fff;
+}
+
+header .social li a:hover {
+   color: #11ABB0;
+}
+
+/* Scroll down link */
 header .scrolldown a {
    position: absolute;
    bottom: 10px;
@@ -115,23 +91,23 @@ header .scrolldown a {
    width: 42px;
    font-size: 42px;
    line-height: 42px;
-   color: #fff;
    border-radius: 100%;
-
-   -webkit-transition: all .3s ease-in-out;
-   -moz-transition: all .3s ease-in-out;
-   -o-transition: all .3s ease-in-out;
-   transition: all .3s ease-in-out;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
 }
-header .scrolldown a:hover { color: #11ABB0; }
 
-/* primary navigation
---------------------------------------------------------------------- */
+header .scrolldown a:hover {
+   color: #11ABB0;
+}
+
+/* Primary navigation */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
-	 margin: 0;
-	 padding: 0;
-	 border: none;
-	 outline: none;
+   margin: 0;
+   padding: 0;
+   border: none;
+   outline: none;
 }
 
 /* nav-wrap */
@@ -141,23 +117,27 @@ header .scrolldown a:hover { color: #11ABB0; }
    text-transform: lowercase;
    letter-spacing: 2.5px;
    margin: 0 auto;
-   z-index: 200;
+   z-index: 100;
    position: fixed;
    left: 0;
    top: 0;
 }
-.opaque { background-color: #A9A9A9; }
 
-/* hide toggle button */
-#nav-wrap > a.mobile-btn { display: none; }
+.opaque {
+   background-color: #A9A9A9;
+}
+
+/* Hide toggle button */
+#nav-wrap > a.mobile-btn {
+   display: none;
+}
 
 ul#nav {
    min-height: 48px;
    width: auto;
-
-   /* center align the menu */
-   text-align: center;
+   text-align: center; /* Center align the menu */
 }
+
 ul#nav li {
    position: relative;
    list-style: none;
@@ -167,29 +147,29 @@ ul#nav li {
 
 /* Links */
 ul#nav li a {
-
-/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
-
    display: inline-block;
    padding: 8px 16px;
    line-height: 32px;
-	text-decoration: none;
+   text-decoration: none;
    text-align: center;
    color: #fff;
-
-	-webkit-transition: color .2s ease-in-out;
-	-moz-transition: color .2s ease-in-out;
-	-o-transition: color .2s ease-in-out;
-	-ms-transition: color .2s ease-in-out;
-	transition: color .2s ease-in-out;
+   -webkit-transition: color 0.2s ease-in-out;
+   -moz-transition: color 0.2s ease-in-out;
+   -o-transition: color 0.2s ease-in-out;
+   -ms-transition: color 0.2s ease-in-out;
+   transition: color 0.2s ease-in-out;
 }
 
-ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F06000; }
+ul#nav li a:active {
+   background-color: transparent !important;
+}
 
+ul#nav li.current a {
+   color: #F06000;
+}
 
 /* ------------------------------------------------------------------ */
-/* c. About Section
+/* c. About Section */
 /* ------------------------------------------------------------------ */
 
 #about {
@@ -199,42 +179,78 @@ ul#nav li.current a { color: #F06000; }
    overflow: hidden;
 }
 
-#about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #11ABB0; }
+#about a,
+#about a:visited {
+   color: #fff;
+   text-decoration: none; /* Prevent underlining links */
+}
+
+#about a:hover,
+#about a:focus {
+   color: #11ABB0;
+}
 
 #about h2 {
-   font: 22px/30px 'opensans-bold', sans-serif;
+   font: 22px/30px 'Open Sans', sans-serif;
+   font-weight: bold;
    color: #fff;
    margin-bottom: 12px;
 }
+
 #about p {
    line-height: 30px;
    color: #fff;
 }
-#about .profile-pic {
-   position: relative;
-   width: 120px;
-   height: 120px;
-   border-radius: 100%;
+
+#about .about-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 30px; /* Adjust spacing between elements */
 }
-#about .contact-details { width: 41.66667%; }
+
+#about .profile-section {
+   flex-shrink: 0;
+   width: 120px; /* Control width */
+}
+
+#about .profile-pic {
+   width: 100%;
+   height: 120px;
+   border-radius: 50%;
+   object-fit: cover; /* Ensures the image fits the circle */
+}
+
+#about .main-content {
+   flex-grow: 1;
+}
+
+#about .main-content h2 {
+   margin-top: 0;
+}
+
 #about .download {
    width: 58.33333%;
    padding-top: 6px;
 }
-#about .main-col { padding-right: 5%; }
+
 #about .download .button {
    margin-top: 6px;
    background: #444;
+   color: #fff;
+   text-decoration: none;
 }
+
 #about .download .button:hover {
    background: #fff;
    color: #2B2B2B;
 }
+
 #about .download .button i {
    margin-right: 15px;
    font-size: 20px;
 }
+
 
 
 /* ------------------------------------------------------------------ */
@@ -385,11 +401,11 @@ ul#nav li.current a { color: #F06000; }
    margin-top: 6px;
 }
 
-/*----------------------------------------------*/
+----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
 
-.bars {
+/* .bars {
 	width: 95%;
 	float: left;
 	padding: 0;
@@ -508,11 +524,11 @@ ul#nav li.current a { color: #F06000; }
 @-webkit-keyframes jquery {
   0%   { width: 0px;  }
   100% { width: 50%;  }
-}
+/*}
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
-/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------
 
 #portfolio {
    background: #ebeeee;
